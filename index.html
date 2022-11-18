@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mantis dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--   google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  <title>Mantis Dashboard</title>
+</head>
+
+<body class='body_container'>
+  <!--     aside bar -->
+  <aside>
+    <p class='logo'>
+      <img src='https://images.unsplash.com/photo-1611488006018-95b79a137ff5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2NzM2NTE&ixlib=rb-1.2.1&q=80' alt='logo' width='50rem' />
+    </p>
+
+    <div class='sidebar'>
+      <h6 class='sidebar_heading'>Navigation</h6>
+      <p class='sidebar_btn'><span><i class="fa-solid fa-gauge-high"></i></span>Dashboard</p>
+    </div>
+
+    <div>
+      <h6 class='sidebar_heading'>Authentication</h6>
+      <p class='sidebar_btn'><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Login</p>
+      <p class='sidebar_btn'><span><i class="fa-regular fa-id-card"></i></span>Register</p>
+    </div>
+
+    <div>
+      <h6 class='sidebar_heading'>Utilities</h6>
+      <p class='sidebar_btn'><i class="fa-solid fa-text-height"></i>Typography</p>
+      <p class='sidebar_btn'><i class="fa-solid fa-paint-roller"></i>Color</p>
+      <p class='sidebar_btn'><i class="fa-solid fa-boxes-stacked"></i>Shadow</p>
+    </div>
+
+    <div>
+      <h6 class='sidebar_heading'>Support</h6>
+      <p class='sidebar_btn'><i class="fa-solid fa-pager"></i>Sample page</p>
+      <p class='sidebar_btn'><i class="fa-solid fa-book"></i>Documentation</p>
+    </div>
+
+  </aside>
+
+  <!--     main body -->
+  <section class='main'>
+    <section class='search_region'>
+      <div>
+        <i class="fa-solid fa-bars icon" id='sidebar-toggle-btn'></i>
+        <input type='search' class='search' placeholder="Ctrl + K" />
+      </div>
+      <div>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-solid fa-bell icon"></i>
+        <span class='head-fa-user-tie'><i class="fa-solid fa-user-tie icon"></i>
+          <span>Joseph Tech</span></span>
+        <i class="fa-solid fa-bars icon" id='search-input-toggle-btn'></i>
+      </div>
+    </section>
+
+    <!--     toggle search on small screen -->
+    <section class='small-screen-search-form visibility toggle' id='small-screen-search-form'>
+      <input type='search' class='togglesearch' placeholder="Ctrl + K" />
+      <div class='user'>
+        <i class="fa-solid fa-user-tie icon"></i>
+        <span>Joseph Tech</span>
+      </div>
+    </section>
+
+    <section class='heading'>
+      <p>Dashboard</p>
+    </section>
+
+    <!--     start of card  -->
+    <section class='cards-container'>
+      <div class='cards'>
+        <h6>Total Page Views</h6>
+        <div class='card_price'>4,42,236 <span class='card_price-percent'>59.3%</span></div>
+        <p>You made an extra <span>35,000</span> this year</p>
+      </div>
+
+      <div class='cards'>
+        <h6>Total Page Views</h6>
+        <div class='card_price'>4,42,236 <span class='card_price-percent'>59.3%</span></div>
+        <p>You made an extra <span>35,000</span> this year</p>
+      </div>
+
+      <div class='cards'>
+        <h6>Total Page Views</h6>
+        <div class='card_price'>4,42,236 <span class='card_price-percent'>59.3%</span></div>
+        <p>You made an extra <span>35,000</span> this year</p>
+      </div>
+
+      <div class='cards'>
+        <h6>Total Page Views</h6>
+        <div class='card_price'>4,42,236 <span class='card_price-percent'>59.3%</span></div>
+        <p>You made an extra <span>35,000</span> this year</p>
+      </div>
+    </section>
+    <!--     end of card  -->
+
+    <!--     start of chart 1  -->
+    <section class='chartOne-wrapper'>
+      <div class='waveChart'>
+        <div class='btn-days'>
+          <h6>Unique Visitor</h6>
+          <div>
+            <button>Month</button>
+            <button>Week</button>
+          </div>
+        </div>
+        <canvas id="waveChart"></canvas>
+      </div>
+
+      <div class='barChart'>
+        <h6>Income Overview </h6>
+        <p style='font-size:0.8rem'>This Week Statistics</p>
+        <h6>$7,650 </h6>
+        <canvas id="barChart">
+      </div>
+    </section>
+    <!--     end of chart 1  -->
+
+    <!--   start table section -->
+    <section class='table_wrapper'>
+      <div class='table'>
+        <table class="table table-hover table-borderless table-sm caption-top">
+          <caption style='font-weight:bold; color:black'> Recent users</caption>
+          <thead style='font-size:0.8rem;'>
+            <tr>
+              <th scope="col">Tracking No.</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Total Order</th>
+              <th scope="col">Status</th>
+              <th scope="col">Total Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Larry the Bird</td>
+              <td>@twitter</td>
+              <td>Larry the Bird</td>
+              <td>Larry the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class='Analytics-Report'>
+        <h6>Analytics Report</h6>
+        <div class='analytic_wrapper'>
+          <div class='analytic_content'>
+            <h6>Company financial growth<h6>
+                <span>+45.14%<span>
+          </div>
+          <div class='analytic_content'>
+            <h6>Company financial growth<h6>
+                <span>+45.14%<span>
+          </div>
+          <div class='analytic_content'>
+            <h6>Company financial growth<h6>
+                <span>+45.14%<span>
+          </div>
+
+          <canvas class='polarArea' id='polarArea'>hello world</canvas>
+
+        </div>
+      </div>
+    </section>
+
+    <section class='footer'>
+      <p>Follow us on</p>
+      <div class='social-handles'>
+        <span><i class="fa-brands fa-twitter"></i></span>
+        <span><i class="fa-brands fa-linkedin-in"></i></span>
+        <span><i class="fa-brands fa-youtube"></i></span>
+      </div>
+    </section>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
