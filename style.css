@@ -23,9 +23,6 @@ body {
 .body_container {
   background: var(--backgroundBody_color);
   display: flex;
-  /*   height: 100%; */
-  /*   justify-content: flex-start; */
-  /*   align-items: flex-start; */
   align-items: stretch;
 }
 
@@ -166,7 +163,7 @@ aside .sidebar_btn:hover {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-contents: flex-start;
+  justify-content: flex-start;
   padding: 0rem 1rem 1rem 1rem;
   margin-top: 2rem;
 }
@@ -209,7 +206,7 @@ aside .sidebar_btn:hover {
 
 #barChart {
   object-fit: contain;
-  heigth: 100%;
+  height: 100%;
   max-width: 100%;
   border: 0.3px solid #d4d4d6;
 }
@@ -336,6 +333,13 @@ aside .sidebar_btn:hover {
 }
 
 /* responsiveness on small screen */
+
+
+@media only screen and (max-width: 1024){
+  aside{
+    padding: 1.5rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   #search-input-toggle-btn {
