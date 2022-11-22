@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  boxing-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -36,6 +36,7 @@ aside {
   background: var(--backgroundwhite);
   display: flex;
   flex-direction: column;
+  align-items: center;
   /*   padding: 0 calc(100% - 97%); */
   transition: all 1s ease;
   flex: 1;
