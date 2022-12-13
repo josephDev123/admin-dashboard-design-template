@@ -37,7 +37,17 @@ aside {
   /*   padding: 0 calc(100% - 97%); */
   transition: all 1s ease;
   flex: 1;
+  position: relative;
+
 }
+
+.sidebar_sticky{
+  position: sticky;
+  overflow-x: hidden;
+  overflow-y: auto; 
+  top: 0;
+  bottom: 0;
+} 
 
 .aside-toggle {
   /*   transform: translateX(0%); */
@@ -76,6 +86,12 @@ aside .sidebar_btn:hover {
 
 .main {
   flex: 6;
+}
+
+.stick_header{
+  position: sticky;
+  top:0;
+  bottom:0;
 }
 
 .search_region {
@@ -338,6 +354,7 @@ aside .sidebar_btn:hover {
 @media only screen and (max-width: 1024){
   aside{
     padding: 1.5rem;
+  
   }
 }
 
