@@ -43,10 +43,11 @@ aside {
 
 .sidebar_sticky{
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   overflow-x: hidden;
   overflow-y: auto; 
   top: 0;
-  bottom: 0;
+  /* bottom: 0; */
 } 
 
 .aside-toggle {
@@ -90,8 +91,9 @@ aside .sidebar_btn:hover {
 
 .stick_header{
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   top:0;
-  bottom:0;
+  /* bottom:0; */
 }
 
 .search_region {
