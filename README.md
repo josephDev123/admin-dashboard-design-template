@@ -32,9 +32,9 @@ This project was built using the following technologies:
 4. Chart.js
 
 ## Screenshots
-<img src'/assets/dashboard.PNG' alt='Admin dashboard'/>
+<img src='/assets/dashboard.PNG' alt='Admin dashboard'/>
 
-<img src'/assets/dashboard1.PNG' alt='Admin dashboard'/>
+<img src='/assets/dashboard1.PNG' alt='Admin dashboard'/>
 
 ## Live Demo
 A live demo of the dashboard can be found at https://admin-dashboard-template1993.netlify.app/.
