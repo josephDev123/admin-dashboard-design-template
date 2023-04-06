@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  /*   height: 100%; */
-}
-
 :root {
   --hover_side_background: #c5dcf4;
   --blue: #1890ff;
@@ -34,8 +29,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*   padding: 0 calc(100% - 97%); */
-  transition: all 1s ease;
+  transition: display 1.5s ease-in-out !important;
   flex: 1;
   position: relative;
 
@@ -47,17 +41,14 @@ aside {
   overflow-x: hidden;
   overflow-y: auto; 
   top: 0;
-  /* bottom: 0; */
 } 
 
 .aside-toggle {
-  /*   transform: translateX(0%); */
   border-right: 1px solid #d4d4d6;
   background: var(--backgroundwhite);
   display: flex;
+  flex: 1.1;
   flex-direction: column;
-  /*   padding: 0 calc(100% - 97%); */
-  transition: all 1s ease;
 }
 
 .logo {

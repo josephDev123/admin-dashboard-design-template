@@ -19,6 +19,8 @@ sidebar_toggle_btn.onclick = () => {
   sidebar.classList.toggle("aside-toggle");
 };
 
+
+
 const waveChart = new Chart(waveChartElement, {
   type: "line",
   data: {
